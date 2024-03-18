@@ -52,6 +52,17 @@
           <li><a href="noticias.html">Notícias</a></li>
           <li><a href="contact.html">Contato</a></li>
         </ul>
+        <div class="navbar-propaganda">
+          <div class="navbar-propaganda--img">
+            <a href="#"><img src="imagens/chocofesta.jpeg" alt="" srcset="" /></a>
+          </div>
+          <div class="navbar-propaganda--img">
+            <a href="#"><img src="imagens/anderson.jpeg" alt="" srcset="" /></a>
+          </div>
+          <div class="navbar-propaganda--img">
+            <a href="#"><img src="imagens/chocofesta.jpeg" alt="" srcset="" /></a>
+          </div>
+        </div>
       </div>
       <!--/.nav-collapse -->
 
@@ -61,17 +72,7 @@
         $tabela=mysqli_query($conexao,$sql) or die (mysqli_error($conexao));
       ?>
 
-      <div class="navbar-propaganda">
-        <div class="navbar-propaganda--img">
-          <a href="#"><img src="imagens/chocofesta.jpeg" alt="" srcset="" /></a>
-        </div>
-        <div class="navbar-propaganda--img">
-          <a href="#"><img src="imagens/anderson.jpeg" alt="" srcset="" /></a>
-        </div>
-        <div class="navbar-propaganda--img">
-          <a href="#"><img src="imagens/chocofesta.jpeg" alt="" srcset="" /></a>
-        </div>
-      </div>
+      
 
       <div class="clearfix"></div>
       <div class="navbar-footer">
@@ -490,6 +491,14 @@
           </div>
         </div>
         <!--/.modal -->
+
+        <div class="divide15"></div>
+
+        <div class="banner--noticia">
+          <div style="background-color: blue; width: 100%;" class="selected"></div>
+          <div style="background-color: red; width: 100%;"></div>
+          <div style="background-color: black; width: 100%;"></div>
+        </div>
 
         <div class="divide15"></div>
 

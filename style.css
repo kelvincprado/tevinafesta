@@ -1138,13 +1138,18 @@ blockquote .author {
 .slider--control {
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.slider--control img{
+    width: 50px;
+    height: 50px;
+    color: white;
 }
 
 .tparrows {
@@ -1605,6 +1610,42 @@ ul.tag-list li a:hover {
 #conteudo-lateral img.selected {
     opacity: 1;
 }
+
+
+/* Slide Banner
+.banner--noticia {
+    display: none;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.banner--noticia div {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 800ms;
+}
+.banner--noticia div.selected {
+    opacity: 1;
+}
+*/
+.banner--noticia {
+    display: none;
+    gap: 10px;
+    width: 100%;
+}
+.banner--noticia div {
+    height: 150px;
+}
+#banner--noticia-pag-not {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+#banner--noticia-pag-not div {
+    height: 150px;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	10. COMMENTS
@@ -3295,7 +3336,16 @@ select {
         padding-bottom: 10px;
     }
     .navbar-propaganda {
-        display: none;
+        display: flex;
+        width: 100%;
+        margin-left: 20px;
+        
+    }
+    .navbar-propaganda--img {        
+        width: 60%;
+        display: flex;
+        justify-content: flex-start;
+
     }
     .list-view figure {
 	    margin-bottom: 20px;
@@ -3424,5 +3474,13 @@ select {
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+    .banner--noticia {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #banner--noticia-pag-not div {
+        height: 120px;
     }
 }

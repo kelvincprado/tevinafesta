@@ -290,3 +290,27 @@ function start() {
 }
 
 window.addEventListener("load", start);
+
+
+
+// Propaganda noticia
+currentDivIndex = 0;
+divSlide = document.querySelectorAll('.banner--noticia div');
+max = divSlide.length;
+
+function nextDiv() {
+    divSlide[currentDivIndex].classList.remove("selected");
+    currentDivIndex++;
+    if(currentDivIndex >= max) {
+        currentDivIndex = 0;
+    }
+    divSlide[currentDivIndex].classList.add("selected");
+}
+
+function startPropaganda() {
+    setInterval(()=>{
+        nextDiv();
+    }, 2000);
+}
+
+window.addEventListener("load", startPropaganda);

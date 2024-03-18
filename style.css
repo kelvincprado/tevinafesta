@@ -697,7 +697,6 @@ blockquote .author {
     font-size: 13px;
     line-height: 20px;
     padding: 0px 35px 0px 35px;
-    display: none;
     text-align: right;
     color: #505050;
 }
@@ -3458,6 +3457,15 @@ select {
     .grid-view .blog-content hr {
         display: block !important
     }
+
+    .navbar-footer {
+        padding: 0px;
+        text-align: left;
+    }
+    .navbar-footer p {
+        margin: 0 20px;
+    }
+
     .area-agencia {
         flex-direction: column;
     }

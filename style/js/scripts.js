@@ -292,8 +292,8 @@ function start() {
 window.addEventListener("load", start);
 
 
-
-// Propaganda noticia
+/*
+// Propaganda noticia, se fosse slide (esta como banner)
 currentDivIndex = 0;
 divSlide = document.querySelectorAll('.banner--noticia div');
 max = divSlide.length;
@@ -314,3 +314,4 @@ function startPropaganda() {
 }
 
 window.addEventListener("load", startPropaganda);
+*/

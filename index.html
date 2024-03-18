@@ -63,36 +63,17 @@
             <a href="#"><img src="imagens/chocofesta.jpeg" alt="" srcset="" /></a>
           </div>
         </div>
+        <div class="clearfix"></div>
+
+        <div class="navbar-footer">
+          <ul class="social">
+            <li><a href="https://www.facebook.com/portaltevinafesta/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="https://twitter.com/tevinafesta" target="_blank"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/tevinafesta/" target="_blank"><i class="ion-social-instagram"></i></a></li>
+          </ul>
+          <p>© 2016 Juno Studio. Theme by <a href="http://elemisfreebies.com" class="nocolor">elemis</a></p>
+        </div>
       </div>
-      <!--/.nav-collapse -->
-
-      <?php
-        require('includes/conexao.php');
-        $sql="SELECT * FROM isw_banner WHERE status='0' AND (id_tipo='3' OR id_tipo='4' OR id_tipo='5') ORDER BY tipo DESC, posicao ASC, rand()"; 
-        $tabela=mysqli_query($conexao,$sql) or die (mysqli_error($conexao));
-      ?>
-
-      
-
-      <div class="clearfix"></div>
-      <div class="navbar-footer">
-        <ul class="social">
-          <li>
-            <a href="https://www.facebook.com/portaltevinafesta/" target="_blank"><i class="ion-social-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/tevinafesta" target="_blank"><i class="ion-social-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/tevinafesta/" target="_blank"><i class="ion-social-instagram"></i></a>
-          </li>
-        </ul>
-        <p>
-          © 2016 Juno Studio. Theme by
-          <a href="http://elemisfreebies.com" class="nocolor">elemis</a>
-        </p>
-      </div>
-      <!-- /.navbar-footer -->
     </div>
     <!--/.navbar -->
 
